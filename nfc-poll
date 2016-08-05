@@ -1,0 +1,427 @@
+nfc-poll -v
+..\examples\nfc-poll uses libnfc 1.7.1
+debug   libnfc.config   key: [allow_autoscan], value: [true]
+debug   libnfc.config   key: [device.name], value: [Duino532I2C]
+debug   libnfc.config   key: [device.connstring], value: [pn532_uart:COM3]
+debug   libnfc.config   Unable to open directory: C:/Users/Pascal/Desktop/Nfc/libnfc-build/config/devices.d
+unknown libnfc.general  log_level is set to 3
+debug   libnfc.general  allow_autoscan is set to true
+debug   libnfc.general  allow_intrusive_scan is set to false
+debug   libnfc.general  1 device(s) defined by user
+debug   libnfc.general    #0 name: "Duino532I2C", connstring: "pn532_uart:COM3"
+debug   libnfc.driver.pn532_uart        Attempt to open: COM3 at 115200 baud.
+debug   libnfc.bus.uart_win32   Serial port speed requested to be set to 115200 baud.
+debug   libnfc.chip.pn53x       Diagnose
+debug   libnfc.chip.pn53x       Timeout value: 500
+debug   libnfc.bus.uart_win32   TX: 55 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+debug   libnfc.chip.pn53x       SAMConfiguration
+debug   libnfc.chip.pn53x       Timeout value: 1000
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 03 fd d4 14 01 17 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 1000 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 1000 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 03 fd
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 03, fd
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 01
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 1000 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 15
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  15
+debug   libnfc.driver.pn532_uart        Get len 01
+debug   libnfc.bus.uart_win32   Timeouts are set to 1000 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 1000 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 16 00
+debug   libnfc.driver.pn532_uart        Check btDCS  16
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 09 f7 d4 00 00 6c 69 62 6e 66 63 be 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 500 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 500 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 09 f7
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 09, f7
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 07
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 500 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 01
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  01
+debug   libnfc.driver.pn532_uart        Get len 07
+debug   libnfc.bus.uart_win32   Timeouts are set to 500 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 6c 69 62 6e 66 63
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 500 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: bc 00
+debug   libnfc.driver.pn532_uart        Check btDCS  bc
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       GetFirmwareVersion
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 02 fe d4 02 2a 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 06 fa
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 06, fa
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 04
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 03
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  03
+debug   libnfc.driver.pn532_uart        Get len 04
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 32 01 06 07
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: e8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  e8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       SetParameters
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 03 fd d4 12 14 06 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 03 fd
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 03, fd
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 01
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 13
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  13
+debug   libnfc.driver.pn532_uart        Get len 01
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 14
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 04 00
+debug   libnfc.driver.pn532_uart        Check btDCS  04
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.general  "Duino532I2C" (pn532_uart:COM3) has been claimed.
+debug   libnfc.chip.pn53x       ReadRegister
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 0c f4 d4 06 63 02 63 03 63 0d 63 38 63 3d b0 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 07 f9
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 07, f9
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 05
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 07
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  07
+debug   libnfc.driver.pn532_uart        Get len 05
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 80 80 80 80
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 24 00
+debug   libnfc.driver.pn532_uart        Check btDCS  24
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       PN53X_REG_CIU_TxMode (Defines the transmission data rate and framing during transmission)
+debug   libnfc.chip.pn53x       WriteRegister
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 05 fb d4 08 63 02 80 3f 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 05 fb
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 05, fb
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 03
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 09
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  09
+debug   libnfc.driver.pn532_uart        Get len 03
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 95 41 01
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 4b 00
+debug   libnfc.driver.pn532_uart        Check btDCS  4b
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       RFConfiguration
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 04 fc d4 32 01 00 f9 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 04 fc
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 04, fc
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 02
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 33
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  33
+debug   libnfc.driver.pn532_uart        Get len 02
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: f8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  f8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       RFConfiguration
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 04 fc d4 32 01 01 f8 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 04 fc
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 04, fc
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 02
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 33
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  33
+debug   libnfc.driver.pn532_uart        Get len 02
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: f8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  f8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       RFConfiguration
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 06 fa d4 32 05 ff ff ff f8 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 06 fa
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 06, fa
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 04
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 33
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  33
+debug   libnfc.driver.pn532_uart        Get len 04
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 00 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: f8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  f8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+NFC reader: Duino532I2C opened
+NFC device will poll during 30000 ms (20 pollings of 300 ms for 5 modulations)
+debug   libnfc.chip.pn53x       ReadRegister
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 0e f2 d4 06 63 02 63 03 63 05 63 38 63 3c 63 3d 19 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 07 f9
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 07, f9
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 05
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 07
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  07
+debug   libnfc.driver.pn532_uart        Get len 05
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 80 80 80 80
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 24 00
+debug   libnfc.driver.pn532_uart        Check btDCS  24
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       PN53X_REG_CIU_TxAuto (Controls the settings of the antenna driver)
+debug   libnfc.chip.pn53x       PN53X_REG_CIU_Control (Contains miscellaneous control bits)
+debug   libnfc.chip.pn53x       PN53X_REG_CIU_BitFraming (Adjustments for bit oriented frames)
+debug   libnfc.chip.pn53x       WriteRegister
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 0b f5 d4 08 63 05 c0 63 3c 90 63 3d d0 5d 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 0b f5
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 0b, f5
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 09
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 09
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  09
+debug   libnfc.driver.pn532_uart        Get len 09
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   ReadFile
+error   libnfc.driver.pn532_uart        Unable to receive data. (RX) if (len) part
+nfc_initiator_poll_target: Timeout
+debug   libnfc.chip.pn53x       InRelease
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 03 fd d4 52 00 da 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 03 fd
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 03, fd
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 01
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 53
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  53
+debug   libnfc.driver.pn532_uart        Get len 01
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  d8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       RFConfiguration
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 04 fc d4 32 01 00 f9 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 04 fc
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 04, fc
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 02
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 33
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  33
+debug   libnfc.driver.pn532_uart        Get len 02
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: f8 00
+debug   libnfc.driver.pn532_uart        Check btDCS  f8
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+debug   libnfc.chip.pn53x       PowerDown
+debug   libnfc.bus.uart_win32   TX: 00 00 ff 03 fd d4 16 f0 26 00
+debug   libnfc.driver.pn532_uart        Read ACK
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 00 ff 00
+debug   libnfc.chip.pn53x       PN53x ACKed
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00 00 ff 03 fd
+debug   libnfc.driver.pn532_uart        Frame preamble+start code
+debug   libnfc.driver.pn532_uart        Check Checksum Normal Frame, 03, fd
+debug   libnfc.driver.pn532_uart        Get len from abtRxBf[3] - 2, 01
+debug   libnfc.driver.pn532_uart        TFI + PD0 (CC+1)
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: d5 17
+debug   libnfc.driver.pn532_uart        Check TFI d5
+debug   libnfc.driver.pn532_uart        Check Command  17
+debug   libnfc.driver.pn532_uart        Get len 01
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 00
+debug   libnfc.driver.pn532_uart        Wait 2 more bytes
+debug   libnfc.bus.uart_win32   Timeouts are set to 350 ms
+debug   libnfc.bus.uart_win32   ReadFile
+debug   libnfc.bus.uart_win32   RX: 14 00
+debug   libnfc.driver.pn532_uart        Check btDCS  14
+debug   libnfc.driver.pn532_uart        Check Postamble  00
+
+C:\Users\Pascal\Desktop\Nfc\libnfc-build\utils>
